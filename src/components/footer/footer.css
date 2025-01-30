@@ -1,0 +1,7 @@
+footer {
+    width: 100lvw;
+    height: 10lvh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

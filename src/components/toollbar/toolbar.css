@@ -1,0 +1,31 @@
+header {
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul{
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+#content-logo {
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
