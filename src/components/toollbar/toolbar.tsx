@@ -1,31 +1,36 @@
-import './toolbar.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './toolbar.css';
 
-export default function Toolbar() {
+
+export default function Toolbar(): React.ReactElement {
     return(
         <header>
             <div id="content-logo">
-                <p>oi_sou_felix</p>
+                <Link id='logo' to="/">
+                    oi_sou_felix
+                </Link>
             </div>
             
             <nav>
                 <ul>
                     <li>
-                        <a>
+                        <Link to="/">
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="/About">
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="/Skills">
                             Skills
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
         </header>
-    )
-}
+    );
+};

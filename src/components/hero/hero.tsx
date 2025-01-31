@@ -6,10 +6,11 @@ import { CiFacebook } from "react-icons/ci";
 import { CiInstagram } from "react-icons/ci";
 import { FaSquareGithub } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
+import React from 'react';
 
 let icons_Size: number = 30;
 
-export default function Hero() {
+export default function Hero(): React.ReactElement {
     return(
         <div id='content'>
             <div id='message-presentation'>
