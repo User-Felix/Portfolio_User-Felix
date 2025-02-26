@@ -8,7 +8,7 @@ export default function Toolbar(): React.ReactElement {
         <header>
             <div id="content-logo">
                 <Link id='logo' to="/">
-                    oi_sou_felix
+                    User_Felix
                 </Link>
             </div>
             

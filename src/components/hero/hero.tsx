@@ -2,8 +2,6 @@ import './hero.css';
 import '../../index.css'
 import HeroImage from '../../assets/hero-image.png';
 import Button from '../button/button';
-import { CiFacebook } from "react-icons/ci";
-import { CiInstagram } from "react-icons/ci";
 import { FaSquareGithub } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
 import React from 'react';
@@ -24,12 +22,6 @@ export default function Hero(): React.ReactElement {
                     <Button text ="My Works"/>
                     <div id='contacts'>
                         <ul>
-                            <li>
-                                <CiFacebook id='icons' size={icons_Size}/>
-                            </li>
-                            <li>
-                                <CiInstagram id='icons' size={icons_Size}/>
-                            </li>
                             <li>
                                 <FaSquareGithub id='icons' size={icons_Size}/>
                             </li>
