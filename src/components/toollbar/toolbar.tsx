@@ -1,31 +1,40 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './toolbar.css';
 
-
 export default function Toolbar(): React.ReactElement {
-    return(
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    return (
         <header>
             <div id="content-logo">
-                <Link id='logo' to="/">
+                <Link id="logo" to="/">
                     User_Felix
                 </Link>
             </div>
             
-            <nav>
+            <button className="menu-toggle" onClick={toggleMenu}>
+                ☰
+            </button>
+
+            <nav className={isMenuOpen ? 'active' : ''}>
                 <ul>
                     <li>
-                        <Link to="/">
+                        <Link to="/" onClick={() => setIsMenuOpen(false)}>
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="/About">
+                        <Link to="/About" onClick={() => setIsMenuOpen(false)}>
                             About
                         </Link>
                     </li>
                     <li>
-                        <Link to="/Skills">
+                        <Link to="/Skills" onClick={() => setIsMenuOpen(false)}>
                             Skills
                         </Link>
                     </li>
@@ -33,4 +42,4 @@ export default function Toolbar(): React.ReactElement {
             </nav>
         </header>
     );
-};
+}

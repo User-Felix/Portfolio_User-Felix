@@ -1,0 +1,154 @@
+#container_About {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#content_About {
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #7f8c8d;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+h5 {
+    color: #95a5a6;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+section#professional-experience ul li ul li,
+section#education ul li ul li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+section#professional-experience ul li ul li:before,
+section#education ul li ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+section#language ul li:before {
+    content: "✓";
+    color: #2ecc71;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #container_About {
+        padding: 15px;
+    }
+
+    #content_About {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container_About {
+        padding: 10px;
+    }
+
+    #content_About {
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: 0.85em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    section#professional-experience ul li ul li,
+    section#education ul li ul li {
+        padding-left: 15px;
+    }
+}
+
+/* Ajustes para melhor legibilidade */
+@media screen and (max-width: 320px) {
+    #content_About {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}

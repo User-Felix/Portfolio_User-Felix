@@ -1,13 +1,14 @@
 import Toolbar from "../../components/toollbar/toolbar";
+import './about.css';
 
 export default function About(): React.ReactElement {
     return (
         <>
             <Toolbar />
             <main>
-                <div id="container">
+                <div id="container_About">
                     
-                    <div id="content">
+                    <div id="content_About">
                         <section id="about-me">
                             <h2>Olá, bem-vindo!</h2>
                             <p>
