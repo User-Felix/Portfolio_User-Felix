@@ -8,8 +8,6 @@ import React from 'react';
 
 let icons_Size: number = 30;
 
-
-
 export default function Hero(): React.ReactElement {
 
     return(
@@ -36,7 +34,7 @@ export default function Hero(): React.ReactElement {
                 </div>
 
             </div>
-            <div>
+            <div id="div-image">
                 <img id='hero-image' src={HeroImage} alt="" />
             </div>
         </div>
