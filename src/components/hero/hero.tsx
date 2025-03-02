@@ -8,9 +8,12 @@ import React from 'react';
 
 let icons_Size: number = 30;
 
+
+
 export default function Hero(): React.ReactElement {
+
     return(
-        <div id='content'>
+        <div id='content-hero'>
             <div id='message-presentation'>
                 <h1>
                     Sebastião Felix
@@ -19,7 +22,7 @@ export default function Hero(): React.ReactElement {
                     Software Engineer 
                 </p>
                 <div id='content-links'>
-                    <Button text ="My Works"/>
+                    <Button text ="My Works" href="/Works" />
                     <div id='contacts'>
                         <ul>
                             <li>

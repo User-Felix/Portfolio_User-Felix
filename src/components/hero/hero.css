@@ -1,6 +1,6 @@
 @import "../../index.css";
 
-#content {
+#content-hero {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,7 +41,7 @@
     justify-content: center;
 }
 
-button {
+#content-links button {
     background-color: var(--button-to-enter-primary-color);
 }
 
@@ -60,7 +60,7 @@ button {
     width: 40lvw;
 }
 
-#content ul li {
+#content-hero ul li {
     width: 30px;
     height: 30px;
 }
